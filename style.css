@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .main-container{
     width: 100%;
@@ -344,8 +344,10 @@
       justify-content: center;
    }
    .left-hero-bar{
-      width: 100%;
+      width: auto;
       height: auto;
+      margin-right: 40px;
+      padding: 20px;
    }
    .right-hero-bar{
       width: 100%;
@@ -404,24 +406,26 @@
       height: auto;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
    }
    .left-hero-bar{
-      width: 100%;
+      width: 10%;
       height: auto;
-      top: 20px;
-      left: 90px;
+      padding-block: 40px;
+      /* background-color: red; */
    }
    .hero-inside{
      left: 0;
    }
    .hero-inside h2{
-      font-size: 2em;
+      font-size: 1.8em;
    }
    .hero-inside h1{
-      font-size: 3em;
+      font-size: 2.6em;
    }
    .hero-inside button{
       width: 50%;
+      font-size: .8em;
       /* padding-block: 10px; */
    }
    .second-line{
