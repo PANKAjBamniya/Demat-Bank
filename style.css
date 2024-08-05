@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .main-container{
     width: 100%;
@@ -114,10 +114,10 @@
     left: 0;
  }
  .left-hero-bar{
-    width: 350px;
-    height: 340px;
+    width: 30%;
+    height: auto;
     background-color: rgb(251, 210, 190);
-    /* padding-block: 50px; */
+    padding-block: 70px;
     display: flex;
     align-items: center;
     /* gap: 0px; */
@@ -326,6 +326,7 @@
       width: 50%;
       height: auto;
    }
+   
    .right-side{
       width: 20%;
       height: auto;
@@ -341,6 +342,10 @@
       height: auto;
       flex-direction: column;
       justify-content: center;
+   }
+   .left-hero-bar{
+      width: 100%;
+      height: auto;
    }
    .right-hero-bar{
       width: 100%;
@@ -354,7 +359,7 @@
    
 }
 
-@media (max-width:480px) {
+@media (max-width:450px) {
    .main-container{
       width: 100%;
       height: auto;
@@ -368,15 +373,28 @@
       height: auto;
    }
    .left-side{
-      width: 60%;
+      width: 50%;
       height: auto;
+      display: flex;
+      /* flex-direction: column; */
+      /* background-color: green; */
+   }
+   .logo{
+      width: 50px;
+      height: 50px;
+   }
+   .left-side h3{
+      width: 90%;
+      font-size: .8em;
    }
    .right-side{
       width: 20%;
       height: auto;
+      justify-content: end;
    }
    .btn{
-      width: 50%;
+      width: 60%;
+      height: auto;
    }
    .right-side a{
       display: none;
@@ -387,27 +405,60 @@
       flex-direction: column;
       justify-content: center;
    }
+   .left-hero-bar{
+      width: 100%;
+      height: auto;
+      top: 20px;
+      left: 90px;
+   }
+   .hero-inside{
+     left: 0;
+   }
+   .hero-inside h2{
+      font-size: 2em;
+   }
+   .hero-inside h1{
+      font-size: 3em;
+   }
    .hero-inside button{
-      padding-block: 10px;
+      width: 50%;
+      /* padding-block: 10px; */
+   }
+   .second-line{
+      display: none;
    }
    .right-hero-bar{
       width: 100%;
       height: auto;
-      margin-block: 30px;
+      /* margin-block: 30px; */
    }
    .hero-login{
-      width: 70%;
+      width: 90%;
       height: auto;
+      /* background-color: rebeccapurple; */
+   }
+   .login{
+      width: 100%;
+      height: auto;
+   }
+   .login-end{
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      /* justify-content: space-between; */
+   }
+   .third-line{
+      display: none;
    }
    .footer-part{
       width: 100%;
       height: auto;
    }
    .left-footer a{
-      font-size: .8em;
+      font-size: .7em;
    }
    .right-footer a{
-      font-size: .8em;
+      font-size: .6em;
    }
    
 }
